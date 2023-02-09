@@ -8,3 +8,5 @@ If you want to compile the repo with embedded dlls get the Fody package off NuGe
 # Preview
 
 ![imfYU7sibQ](https://user-images.githubusercontent.com/120181238/217708069-c50348cf-02a7-45df-859b-9bb8f9b70bd1.png)
+
+If you have any questions, add me on discord mje#9523
