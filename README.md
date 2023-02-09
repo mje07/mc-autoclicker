@@ -3,7 +3,7 @@ A reskin and cleanup of weynn's GitHub clicker, I also embedded the dlls in the 
 
 # Compliling
 
-If you want to compile the repo with embedded dlls get the Fody package off NuGet then build with debug instead of release.
+If you want to compile the repo with embedded dlls get the 'Fody' package off NuGet (Project -> Manage NuGet Packages) then build with debug instead of release.
 
 # Preview
 
