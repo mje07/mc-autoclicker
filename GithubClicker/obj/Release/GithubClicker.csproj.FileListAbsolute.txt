@@ -1,6 +1,0 @@
-C:\Users\mje\Desktop\Autoclicker\Autoclicker\GithubClicker\obj\Release\GithubClicker.csproj.AssemblyReference.cache
-C:\Users\mje\Desktop\Autoclicker\Autoclicker\GithubClicker\obj\Release\GithubClicker.csproj.SuggestedBindingRedirects.cache
-C:\Users\mje\Desktop\Autoclicker\Autoclicker\GithubClicker\obj\Release\GithubClicker.MainForm.resources
-C:\Users\mje\Desktop\Autoclicker\Autoclicker\GithubClicker\obj\Release\GithubClicker.Properties.Resources.resources
-C:\Users\mje\Desktop\Autoclicker\Autoclicker\GithubClicker\obj\Release\GithubClicker.csproj.GenerateResource.cache
-C:\Users\mje\Desktop\Autoclicker\Autoclicker\GithubClicker\obj\Release\GithubClicker.csproj.CoreCompileInputs.cache
