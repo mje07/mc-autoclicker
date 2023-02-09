@@ -288,5 +288,10 @@ namespace GithubClicker
         }
 
         #endregion
+
+        private void cbMinimize_CheckedChanged(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

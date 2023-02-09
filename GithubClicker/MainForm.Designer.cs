@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.pnCategory = new Siticone.UI.WinForms.SiticonePanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cbSDestruct = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
             this.pnLeft = new Siticone.UI.WinForms.SiticonePanel();
             this.label10 = new System.Windows.Forms.Label();
             this.slotL9 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
@@ -74,11 +76,13 @@
             this.slotR2 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
             this.slotR1 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
             this.Binding = new System.Windows.Forms.Timer(this.components);
-            this.siticoneCustomCheckBox1 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.siticonePanel1 = new Siticone.UI.WinForms.SiticonePanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cbMinimize = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
             this.pnCategory.SuspendLayout();
             this.pnLeft.SuspendLayout();
             this.pnRight.SuspendLayout();
+            this.siticonePanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnCategory
@@ -87,12 +91,43 @@
             this.pnCategory.BorderRadius = 3;
             this.pnCategory.BorderThickness = 1;
             this.pnCategory.Controls.Add(this.label3);
-            this.pnCategory.Controls.Add(this.siticoneCustomCheckBox1);
+            this.pnCategory.Controls.Add(this.cbSDestruct);
             this.pnCategory.Location = new System.Drawing.Point(15, 268);
             this.pnCategory.Name = "pnCategory";
             this.pnCategory.ShadowDecoration.Parent = this.pnCategory;
             this.pnCategory.Size = new System.Drawing.Size(240, 40);
             this.pnCategory.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.label3.Location = new System.Drawing.Point(35, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(73, 15);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Self Destruct";
+            // 
+            // cbSDestruct
+            // 
+            this.cbSDestruct.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.cbSDestruct.CheckedState.BorderRadius = 3;
+            this.cbSDestruct.CheckedState.BorderThickness = 1;
+            this.cbSDestruct.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.cbSDestruct.CheckedState.Parent = this.cbSDestruct;
+            this.cbSDestruct.CheckMarkColor = System.Drawing.Color.Empty;
+            this.cbSDestruct.Location = new System.Drawing.Point(15, 12);
+            this.cbSDestruct.Name = "cbSDestruct";
+            this.cbSDestruct.ShadowDecoration.Parent = this.cbSDestruct;
+            this.cbSDestruct.Size = new System.Drawing.Size(15, 15);
+            this.cbSDestruct.TabIndex = 27;
+            this.cbSDestruct.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.cbSDestruct.UncheckedState.BorderRadius = 3;
+            this.cbSDestruct.UncheckedState.BorderThickness = 0;
+            this.cbSDestruct.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.cbSDestruct.UncheckedState.Parent = this.cbSDestruct;
+            this.cbSDestruct.Click += new System.EventHandler(this.pbDestruct_Click);
             // 
             // pnLeft
             // 
@@ -948,36 +983,49 @@
             this.Binding.Interval = 150;
             this.Binding.Tick += new System.EventHandler(this.Binding_Tick);
             // 
-            // siticoneCustomCheckBox1
+            // siticonePanel1
             // 
-            this.siticoneCustomCheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.siticoneCustomCheckBox1.CheckedState.BorderRadius = 3;
-            this.siticoneCustomCheckBox1.CheckedState.BorderThickness = 1;
-            this.siticoneCustomCheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.siticoneCustomCheckBox1.CheckedState.Parent = this.siticoneCustomCheckBox1;
-            this.siticoneCustomCheckBox1.CheckMarkColor = System.Drawing.Color.Empty;
-            this.siticoneCustomCheckBox1.Location = new System.Drawing.Point(15, 12);
-            this.siticoneCustomCheckBox1.Name = "siticoneCustomCheckBox1";
-            this.siticoneCustomCheckBox1.ShadowDecoration.Parent = this.siticoneCustomCheckBox1;
-            this.siticoneCustomCheckBox1.Size = new System.Drawing.Size(15, 15);
-            this.siticoneCustomCheckBox1.TabIndex = 27;
-            this.siticoneCustomCheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.siticoneCustomCheckBox1.UncheckedState.BorderRadius = 3;
-            this.siticoneCustomCheckBox1.UncheckedState.BorderThickness = 0;
-            this.siticoneCustomCheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.siticoneCustomCheckBox1.UncheckedState.Parent = this.siticoneCustomCheckBox1;
-            this.siticoneCustomCheckBox1.Click += new System.EventHandler(this.pbDestruct_Click);
+            this.siticonePanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.siticonePanel1.BorderRadius = 3;
+            this.siticonePanel1.BorderThickness = 1;
+            this.siticonePanel1.Controls.Add(this.label4);
+            this.siticonePanel1.Controls.Add(this.cbMinimize);
+            this.siticonePanel1.Location = new System.Drawing.Point(268, 268);
+            this.siticonePanel1.Name = "siticonePanel1";
+            this.siticonePanel1.ShadowDecoration.Parent = this.siticonePanel1;
+            this.siticonePanel1.Size = new System.Drawing.Size(210, 40);
+            this.siticonePanel1.TabIndex = 29;
             // 
-            // label3
+            // label4
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.label3.Location = new System.Drawing.Point(35, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 15);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "Self Destruct";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.label4.Location = new System.Drawing.Point(35, 12);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 15);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "Minimize";
+            // 
+            // cbMinimize
+            // 
+            this.cbMinimize.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.cbMinimize.CheckedState.BorderRadius = 3;
+            this.cbMinimize.CheckedState.BorderThickness = 1;
+            this.cbMinimize.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.cbMinimize.CheckedState.Parent = this.cbMinimize;
+            this.cbMinimize.CheckMarkColor = System.Drawing.Color.Empty;
+            this.cbMinimize.Location = new System.Drawing.Point(15, 12);
+            this.cbMinimize.Name = "cbMinimize";
+            this.cbMinimize.ShadowDecoration.Parent = this.cbMinimize;
+            this.cbMinimize.Size = new System.Drawing.Size(15, 15);
+            this.cbMinimize.TabIndex = 27;
+            this.cbMinimize.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.cbMinimize.UncheckedState.BorderRadius = 3;
+            this.cbMinimize.UncheckedState.BorderThickness = 0;
+            this.cbMinimize.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.cbMinimize.UncheckedState.Parent = this.cbMinimize;
+            this.cbMinimize.CheckedChanged += new System.EventHandler(this.cbMinimize_CheckedChanged);
             // 
             // MainForm
             // 
@@ -986,6 +1034,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(520, 320);
+            this.Controls.Add(this.siticonePanel1);
             this.Controls.Add(this.pnRight);
             this.Controls.Add(this.pnLeft);
             this.Controls.Add(this.pnCategory);
@@ -996,7 +1045,6 @@
             this.Name = "MainForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Click += new System.EventHandler(this.pbDestruct_Click);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseDown);
             this.pnCategory.ResumeLayout(false);
             this.pnCategory.PerformLayout();
@@ -1004,6 +1052,8 @@
             this.pnLeft.PerformLayout();
             this.pnRight.ResumeLayout(false);
             this.pnRight.PerformLayout();
+            this.siticonePanel1.ResumeLayout(false);
+            this.siticonePanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1054,7 +1104,10 @@
         private Siticone.UI.WinForms.SiticoneCustomCheckBox slotR1;
         private System.Windows.Forms.Timer Binding;
         private System.Windows.Forms.Label label3;
-        private Siticone.UI.WinForms.SiticoneCustomCheckBox siticoneCustomCheckBox1;
+        private Siticone.UI.WinForms.SiticoneCustomCheckBox cbSDestruct;
+        private Siticone.UI.WinForms.SiticonePanel siticonePanel1;
+        private System.Windows.Forms.Label label4;
+        private Siticone.UI.WinForms.SiticoneCustomCheckBox cbMinimize;
     }
 }
 
